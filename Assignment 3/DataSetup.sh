@@ -1,0 +1,1 @@
+mpirun --bind-to none ./dss $1 $2
