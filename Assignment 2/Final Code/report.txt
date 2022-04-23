@@ -1,0 +1,29 @@
+Runtime Analysis
+
+For each graph we report arguments vs time taken
+
+Arguments of form       -> (restart_prob, num_steps, num_walks, num_rec, seed)
+
+Outputs of the form     -> Time for (16, 8, 4, 2, 1) processes in seconds
+
+Graph 8717_31525
+(0.1, 5000, 30, 20, 369)    -> (8.875, 15.553, 28.380, 52.398, 92.462)
+
+Graph 81867_545671
+(0.1, 200, 30, 20, 369)     -> (60.718, 98.317, 142.859, 200.103, 245.703)
+
+Graph 82168_870161
+(0.1, 200, 30, 20, 369)     -> (181.543, 322.453, 461.355, 603.385, 769.014)
+
+Times with varying seeds with 16 processes
+(0.1, 200, 30, 20, 756)     -> 0.690s
+(0.1, 200, 30, 20, 150)     -> 0.660s
+(0.1, 200, 30, 20, 7569)    -> 0.670s
+(0.1, 200, 30, 20, 1423)    -> 0.642s
+
+(0.1, 200, 30, 20, 756)     -> 8.868s
+(0.1, 200, 30, 20, 150)     -> 8.766s
+(0.1, 200, 30, 20, 7569)    -> 8.814s
+(0.1, 200, 30, 20, 1423)    -> 8.868s
+
+The time varies only slightly, hence seed doesn't hugely affect it
